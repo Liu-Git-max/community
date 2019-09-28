@@ -15,6 +15,17 @@ public class AccessTokenDTO {
         this.client_id = client_id;
     }
 
+    @Override
+    public String toString() {
+        return "AccessTokenDTO{" +
+                "client_id='" + client_id + '\'' +
+                ", client_secret='" + client_secret + '\'' +
+                ", code='" + code + '\'' +
+                ", redirect_uri='" + redirect_uri + '\'' +
+                ", state='" + state + '\'' +
+                '}';
+    }
+
     public String getClient_secret() {
         return client_secret;
     }
