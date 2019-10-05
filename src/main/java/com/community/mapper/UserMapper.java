@@ -70,4 +70,8 @@ public interface UserMapper {
      * @mbg.generated Fri Oct 04 23:49:10 CST 2019
      */
     int updateByExample(@Param("record") User record, @Param("example") UserExample example);
+
+
+    User selectByPrimaryKey(Long id);
+
 }

@@ -195,8 +195,8 @@ public class Question {
      *
      * @mbg.generated Fri Oct 04 23:49:10 CST 2019
      */
-    public Integer getCreator() {
-        return creator;
+    public Long getCreator() {
+        return Long.valueOf(creator);
     }
 
     /**
