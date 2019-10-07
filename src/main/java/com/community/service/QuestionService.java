@@ -2,6 +2,9 @@ package com.community.service;
 
 import com.community.dto.PaginationDTO;
 import com.community.dto.QuestionDTO;
+import com.community.exception.CustomizeErrorCode;
+import com.community.exception.CustomizeException;
+import com.community.mapper.QuestionExtMapper;
 import com.community.mapper.QuestionMapper;
 import com.community.mapper.UserMapper;
 import com.community.model.Question;
@@ -19,9 +22,11 @@ public class QuestionService {
     @Autowired
     private QuestionMapper questionMapper;
     @Autowired
+    private QuestionExtMapper questionExtMapper;
+    @Autowired
     private UserMapper userMapper;
 
-    //分页显示所有文荣
+    //分页显示所有内容
     public PaginationDTO list(Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
         Integer totalCount = (int)questionMapper.countByExample(new QuestionExample());
@@ -55,7 +60,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public PaginationDTO list(Integer userId, Integer page, Integer size) {
+    public PaginationDTO list(Long userId, Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
 
         Integer totalPage;
@@ -100,8 +105,11 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public QuestionDTO getById(Integer id) {
+    public QuestionDTO getById(Long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
+        if(question == null){
+            throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
+        }
         QuestionDTO questionDTO = new QuestionDTO();
         BeanUtils.copyProperties(question,questionDTO);//将quetion的内容拷贝到questiondto
         User user = userMapper.selectByPrimaryKey(question.getCreator());
@@ -114,6 +122,9 @@ public class QuestionService {
             //创建
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
+            question.setViewCount(0);
+            question.setLikeCount(0);
+            question.setCommentCount(0);
             questionMapper.insert(question);
         }else{
             Question updateQuestion = new Question();
@@ -124,7 +135,19 @@ public class QuestionService {
             question.setGmtModified(question.getGmtCreate());
             QuestionExample example = new QuestionExample();
             example.createCriteria().andIdEqualTo(question.getId());
-            questionMapper.updateByExampleSelective(updateQuestion,example);
+           int updated = questionMapper.updateByExampleSelective(updateQuestion,example);
+           if (updated != 1){
+                   throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
+
+           }
         }
+    }
+
+    //累加阅读数
+    public void incView(Long id) {
+       Question question = new Question();
+       question.setId(id);
+       question.setViewCount(1);
+       questionExtMapper.incView(question);
     }
 }
