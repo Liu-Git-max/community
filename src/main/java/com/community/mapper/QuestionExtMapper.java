@@ -11,6 +11,7 @@ public interface QuestionExtMapper {
     //增加评论数
     int incCommentCount(Question record);
 
+    //查询相同标签的问题
     List<Question> selectRelated(Question question);
 
 }

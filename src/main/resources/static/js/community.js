@@ -2,25 +2,7 @@
 function post() {
     var questionId = $("#question_id").val();
     var content = $("#comment_content").val();
-    $.ajax({
-        type: "POST",
-        url: "/comment",
-        contentType: 'application/json',
-        data: JSON.stringify({
-            "parentId": questionId,
-            "content": content,
-            "type": 1
-        }),
-        success: function (response) {
-            if (response.code == 200) {
-                $("#comment_section").hide();
-            } else {
-                alert(response.message);
-            }
-            console.log(response);
-        },
-      dataTye:"json"
-    });
+    comment2target(questionId, 1, content);
 }
 
 function comment2target(targetId, type, content) {
@@ -63,7 +45,9 @@ function comment(e) {
     comment2target(commentId, 2, content);
 }
 
-
+/**
+ * 展开二级评论
+ */
 function collapseComments(e) {
     var id = e.getAttribute("data-id");
     var comments = $("#comment-" + id);

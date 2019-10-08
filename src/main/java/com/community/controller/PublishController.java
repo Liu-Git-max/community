@@ -1,5 +1,6 @@
 package com.community.controller;
 
+import com.community.cache.TagCache;
 import com.community.dto.QuestionDTO;
 import com.community.model.Question;
 import com.community.model.User;
@@ -27,6 +28,7 @@ public class PublishController {
         model.addAttribute("description",question.getDescription());
         model.addAttribute("tag",question.getTag());
         model.addAttribute("id",question.getId());
+        model.addAttribute("tags", TagCache.get());
         return "publish";
     }
 
