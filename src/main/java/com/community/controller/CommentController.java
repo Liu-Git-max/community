@@ -44,7 +44,7 @@ public class CommentController {
         comment.setType(commentCreateDTO.getType());
         comment.setContent(commentCreateDTO.getContent());
         comment.setCommentator(user.getId());
-        commentService.insert(comment);
+        commentService.insert(comment,user);
         Map<Object,Object> objectObjectHashMap = new HashMap<>();
 
         objectObjectHashMap.put("message","成功");

@@ -33,7 +33,7 @@ public class UserService {
             updateUser.setName(user.getName());
             updateUser.setToken(user.getToken());
             UserExample example = new UserExample();
-            userExample.createCriteria().andIdEqualTo(dbUser.getId());
+            example.createCriteria().andIdEqualTo(dbUser.getId());
             userMapper.updateByExampleSelective(updateUser,example);//更新用户
        }
     }

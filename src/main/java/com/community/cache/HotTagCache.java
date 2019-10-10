@@ -1,6 +1,7 @@
 package com.community.cache;
 
-import life.majiang.community.dto.HotTagDTO;
+
+import com.community.dto.HotTagDTO;
 import lombok.Data;
 import org.springframework.stereotype.Component;
 
@@ -9,9 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-/**
- * Created by codedrinker on 2019/8/2.
- */
+
 
 @Component
 @Data
