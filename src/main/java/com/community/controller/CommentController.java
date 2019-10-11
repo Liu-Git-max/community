@@ -21,8 +21,7 @@ import java.util.Map;
 @Controller
 public class CommentController {
 
-    @Autowired
-    private CommentMapper commentMapper;
+
     @Autowired
     private CommentService commentService;
 

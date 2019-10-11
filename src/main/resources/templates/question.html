@@ -26,7 +26,7 @@
 
             <!--正文-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h4 class="question-title"><span th:text="${question.title}"></span> </h4>
+                <h3 class="question-title"><span th:text="${question.title}"></span> </h3>
                 <span class="text-desc">
                作者： <span th:text="${question.user.name}"></span> |
                发布时间： <span th:text="${#dates.format(question.getGmtCreate(),'yyyy-MM-dd HH:mm')}"></span> |
@@ -130,7 +130,7 @@
 <!--            右边信息块-->
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               <h4>发起人</h4>
+               <h3>发起人</h3>
                 <div class="media">
                     <div class="media-left">
                         <a href="#">
@@ -138,9 +138,9 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <h5 class="media-heading">
+                        <h4 class="media-heading">
                         <span th:text="${question.user.name}"></span>
-                        </h5>
+                        </h4>
                     </div>
                 </div>
             </div>
@@ -151,10 +151,10 @@
 <!--            相关问题-->
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               <h4>相关问题</h4>
+               <h3>相关问题</h3>
                 <ul class="question-related">
                     <li th:each="related : ${relatedQuestions}">
-                        <a th:href="@{'/question/'+ ${related.id}}" th:text="${related.title}"></a>
+                        <h5><a th:href="@{'/question/'+ ${related.id}}" th:text="${related.title}"></a></h5>
                     </li>
                 </ul>
             </div>
