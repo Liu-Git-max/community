@@ -405,3 +405,16 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2019-10-12 22:12:52.880  INFO 15684 --- [restartedMain] com.community.CommunityApplication       : Started CommunityApplication in 1.426 seconds (JVM running for 3653.691)
 2019-10-12 22:12:52.883  INFO 15684 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
 2019-10-12 22:12:55.456  INFO 15684 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 22:12:55.787  INFO 15684 --- [restartedMain] com.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-HQBG1T7A with PID 15684 (D:\maven\community\target\classes started by liu in D:\maven\community)
+2019-10-12 22:12:55.789  INFO 15684 --- [restartedMain] com.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-10-12 22:12:56.247  INFO 15684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-10-12 22:12:56.249  INFO 15684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 22:12:56.249  INFO 15684 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-12 22:12:56.265  INFO 15684 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 22:12:56.265  INFO 15684 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 471 ms
+2019-10-12 22:12:56.460  INFO 15684 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 22:12:56.484  INFO 15684 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 22:12:56.669  INFO 15684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 22:12:56.689  INFO 15684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-10-12 22:12:56.690  INFO 15684 --- [restartedMain] com.community.CommunityApplication       : Started CommunityApplication in 0.931 seconds (JVM running for 3657.501)
+2019-10-12 22:12:56.692  INFO 15684 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
