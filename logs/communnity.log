@@ -17,3 +17,19 @@
 2019-10-12 11:24:54.482  INFO 10680 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
 2019-10-12 11:24:54.555  INFO 10680 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2019-10-12 11:24:54.688  INFO 10680 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-12 11:50:51.986  INFO 10680 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 11:50:51.987  INFO 10680 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-12 11:50:51.995  INFO 10680 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-12 11:50:52.399  INFO 10680 --- [restartedMain] com.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-HQBG1T7A with PID 10680 (D:\maven\community\target\classes started by liu in D:\maven\community)
+2019-10-12 11:50:52.399  INFO 10680 --- [restartedMain] com.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-10-12 11:50:53.181  INFO 10680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-10-12 11:50:53.182  INFO 10680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 11:50:53.183  INFO 10680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-12 11:50:55.058  INFO 10680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 11:50:55.058  INFO 10680 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2657 ms
+2019-10-12 11:50:55.341  INFO 10680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 11:50:55.370  INFO 10680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 11:50:55.507  INFO 10680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 11:50:55.534  INFO 10680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-10-12 11:50:55.535  INFO 10680 --- [restartedMain] com.community.CommunityApplication       : Started CommunityApplication in 3.165 seconds (JVM running for 1586.354)
+2019-10-12 11:50:55.538  INFO 10680 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
