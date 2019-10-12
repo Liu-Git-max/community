@@ -1,5 +1,19 @@
 ## 小刘社区
-
+##部署
+- ssh root@117.50.104.22 登陆服务器
+- yum update
+- yum install git
+- mkdir App
+- cd App
+- git clone https://github.com/Liu-Git-max/community.git
+- cd community
+- yum install maven
+- mvn compile package 编译打包
+- cp src/main/resources/application.properties src/main/resources/application-production.properties
+- vim src/main/resources/application-production.properties
+- mvn package
+- java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar
+- ps -aux | grep java 
 ## 快速运行
 1. 安装必备工具  
 JDK，Maven
