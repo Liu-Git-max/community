@@ -6,7 +6,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.8.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com</groupId>
     <artifactId>community</artifactId>
@@ -17,6 +17,27 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <db.url>jdbc:mysql://localhost:3306/community?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC&amp;useSSL=false</db.url>
+                <db.user>root</db.user>
+                <db.password>123</db.password>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>production</id>
+            <properties>
+                <db.url>jdbc:mysql://10.9.189.98:3306/community</db.url>
+                <db.user>root</db.user>
+                <db.password>lwhzdjss123</db.password>
+            </properties>
+        </profile>
+    </profiles>
 
     <dependencies>
         <dependency>
@@ -93,9 +114,9 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>5.2.4</version>
                 <configuration>
-                    <url>jdbc:mysql://10.9.189.98:3306/community</url>
-                    <user>root</user>
-                    <password>lwhzdjss123</password>
+                    <url>${db.url}</url>
+                    <user>${db.user}</user>
+                    <password>${db.password}</password>
                 </configuration>
                 <dependencies>
                     <dependency>

@@ -2,6 +2,7 @@ package com.community.controller;
 
 import com.community.dto.FileDTO;
 import com.community.provider.UCloudProvider;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 @Controller
+@Slf4j
 public class FileController {
     @Autowired
     private UCloudProvider uCloudProvider;
@@ -28,6 +30,7 @@ public class FileController {
             fileDTO.setUrl(fileName);
             return fileDTO;
         }catch (IOException e){
+            log.error("upload error", e);
             FileDTO fileDTO = new FileDTO();
             fileDTO.setSuccess(0);
             fileDTO.setMessage("上传失败");

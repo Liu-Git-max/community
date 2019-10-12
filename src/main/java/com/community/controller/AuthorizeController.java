@@ -5,6 +5,7 @@ import com.community.dto.GithubUser;
 import com.community.model.User;
 import com.community.provider.GithubProvider;
 import com.community.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 @Controller
+@Slf4j
 public class AuthorizeController {
 
     @Autowired
@@ -51,6 +53,7 @@ public class AuthorizeController {
 
             return "redirect:/";
         }else {
+            log.error("callback get github error,{}", githubUser);
             //登录失败，重新登陆
             return "redirect:/";
 
