@@ -13,7 +13,8 @@
 - vim src/main/resources/application-production.properties
 - mvn package
 - java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar
-- ps -aux | grep java 
+- mvn clean compile flyway:migrate -Pproduction
+  java -jar 包名    运行打包文件
 ## 快速运行
 1. 安装必备工具  
 JDK，Maven
