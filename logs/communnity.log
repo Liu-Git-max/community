@@ -1,55 +1,6 @@
-2019-11-07 21:28:24.023  INFO 31256 --- [restartedMain] com.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-HQBG1T7A with PID 31256 (D:\maven\community\target\classes started by liu in D:\maven\community)
-2019-11-07 21:28:24.031  INFO 31256 --- [restartedMain] com.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2019-11-07 21:28:24.104  INFO 31256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-11-07 21:28:24.104  INFO 31256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-11-07 21:28:26.663  INFO 31256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2019-11-07 21:28:26.712  INFO 31256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-07 21:28:26.713  INFO 31256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-11-07 21:28:26.843  INFO 31256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-07 21:28:26.843  INFO 31256 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2738 ms
-2019-11-07 21:28:27.857  INFO 31256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-07 21:28:27.943  INFO 31256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-11-07 21:28:28.340  INFO 31256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-11-07 21:28:28.405  INFO 31256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2019-11-07 21:28:28.409  INFO 31256 --- [restartedMain] com.community.CommunityApplication       : Started CommunityApplication in 4.963 seconds (JVM running for 6.147)
-2019-11-07 21:28:35.886  INFO 31256 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-07 21:28:35.887  INFO 31256 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-07 21:28:35.897  INFO 31256 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2019-11-07 21:28:35.982  INFO 31256 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-11-07 21:28:36.219  INFO 31256 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-11-07 21:36:37.020  INFO 31256 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-11-07 21:36:37.021  INFO 31256 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-11-07 21:36:37.027  INFO 31256 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-11-07 21:36:37.388  INFO 31256 --- [restartedMain] com.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-HQBG1T7A with PID 31256 (D:\maven\community\target\classes started by liu in D:\maven\community)
-2019-11-07 21:36:37.389  INFO 31256 --- [restartedMain] com.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2019-11-07 21:36:37.863  INFO 31256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2019-11-07 21:36:37.865  INFO 31256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-07 21:36:37.866  INFO 31256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-11-07 21:36:37.887  INFO 31256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-07 21:36:37.887  INFO 31256 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 465 ms
-2019-11-07 21:36:38.146  INFO 31256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-07 21:36:38.178  INFO 31256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-11-07 21:36:38.347  INFO 31256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-11-07 21:36:38.377  INFO 31256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2019-11-07 21:36:38.378  INFO 31256 --- [restartedMain] com.community.CommunityApplication       : Started CommunityApplication in 1.034 seconds (JVM running for 496.117)
-2019-11-07 21:36:38.383  INFO 31256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-11-07 21:36:43.639  INFO 31256 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-11-07 21:36:44.060  INFO 31256 --- [restartedMain] com.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-HQBG1T7A with PID 31256 (D:\maven\community\target\classes started by liu in D:\maven\community)
-2019-11-07 21:36:44.061  INFO 31256 --- [restartedMain] com.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2019-11-07 21:36:44.446  INFO 31256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2019-11-07 21:36:44.448  INFO 31256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-07 21:36:44.449  INFO 31256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-11-07 21:36:44.469  INFO 31256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-07 21:36:44.469  INFO 31256 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 405 ms
-2019-11-07 21:36:44.830  INFO 31256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-07 21:36:44.868  INFO 31256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-11-07 21:36:45.038  INFO 31256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-11-07 21:36:45.064  INFO 31256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2019-11-07 21:36:45.068  INFO 31256 --- [restartedMain] com.community.CommunityApplication       : Started CommunityApplication in 1.045 seconds (JVM running for 502.805)
-2019-11-07 21:36:45.072  INFO 31256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-11-07 21:37:42.064  INFO 29348 --- [main] com.community.CommunityApplicationTests  : Starting CommunityApplicationTests on LAPTOP-HQBG1T7A with PID 29348 (started by liu in D:\maven\community)
-2019-11-07 21:37:42.067  INFO 29348 --- [main] com.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
-2019-11-07 21:37:45.095  INFO 29348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-07 21:37:45.257  INFO 29348 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-11-07 21:37:45.930  INFO 29348 --- [main] com.community.CommunityApplicationTests  : Started CommunityApplicationTests in 4.295 seconds (JVM running for 5.313)
-2019-11-07 21:37:46.322  INFO 29348 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-08 17:04:56.490  INFO 38488 --- [main] com.community.CommunityApplicationTests  : Starting CommunityApplicationTests on LAPTOP-HQBG1T7A with PID 38488 (started by liu in D:\maven\community)
+2019-11-08 17:04:56.494  INFO 38488 --- [main] com.community.CommunityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-11-08 17:04:59.797  INFO 38488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-08 17:04:59.955  INFO 38488 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-08 17:05:00.607  INFO 38488 --- [main] com.community.CommunityApplicationTests  : Started CommunityApplicationTests in 4.517 seconds (JVM running for 5.539)
+2019-11-08 17:05:00.971  INFO 38488 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
